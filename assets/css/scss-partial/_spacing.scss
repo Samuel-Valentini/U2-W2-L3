@@ -26,7 +26,7 @@ $dimensions: (
 
 header {
     padding-inline: 10%;
-    padding-bottom: 3rem;
+    padding-bottom: 3.5rem;
     min-height: 420px;
 }
 
@@ -37,6 +37,7 @@ header > div {
 
 header > div > div {
     width: 49%;
+    min-width: 310px;
     position: relative;
 
     img {
