@@ -27,6 +27,7 @@ $dimensions: (
 header {
     padding-inline: 10%;
     padding-bottom: 3rem;
+    min-height: 420px;
 }
 
 header > div {
@@ -43,6 +44,7 @@ header > div > div {
         border-radius: 5px;
         border: 2px solid $header-border;
         position: absolute;
+        max-width: 350px;
     }
 }
 

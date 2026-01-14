@@ -289,6 +289,7 @@ nav > div {
 header {
   padding-inline: 10%;
   padding-bottom: 3rem;
+  min-height: 420px;
 }
 
 header > div {
@@ -305,6 +306,7 @@ header > div > div img {
   border-radius: 5px;
   border: 2px solid #b278f5;
   position: absolute;
+  max-width: 350px;
 }
 
 header nav {
