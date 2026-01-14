@@ -1,7 +1,7 @@
-@import "./scss-partial/reset";
-@import "./scss-partial/colors";
-@import "./scss-partial/fonts";
-@import "./scss-partial/spacing";
-@import "./scss-partial/buttons";
-@import "./scss-partial/gen-mixins";
-@import "./scss-partial/animations";
+@use "./scss-partial/reset" as *;
+@use "./scss-partial/colors" as *;
+@use "./scss-partial/fonts" as *;
+@use "./scss-partial/spacing" as *;
+@use "./scss-partial/buttons" as *;
+@use "./scss-partial/gen-mixins" as *;
+@use "./scss-partial/animations" as *;
