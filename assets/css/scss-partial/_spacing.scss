@@ -1,0 +1,94 @@
+$block-types: block, inline;
+$dimensions: (
+    sm: 5px,
+    normal: 10px,
+    md: 15px,
+    lg: 20px,
+    xl: 25px,
+    xxl: 30px,
+);
+
+@each $block-type in $block-types {
+    @each $dimension-name, $dimension-value in $dimensions {
+        .padding-#{$block-type}-#{$dimension-name} {
+            padding-#{$block-type}: $dimension-value;
+        }
+    }
+}
+
+@each $block-type in $block-types {
+    @each $dimension-name, $dimension-value in $dimensions {
+        .margin-#{$block-type}-#{$dimension-name} {
+            margin-#{$block-type}: $dimension-value;
+        }
+    }
+}
+
+header {
+    padding-inline: 10%;
+    padding-bottom: 3rem;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+header > div > div {
+    width: 49%;
+    position: relative;
+
+    img {
+        width: 100%;
+        border-radius: 5px;
+        border: 2px solid $header-border;
+        position: absolute;
+    }
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+nav {
+    padding-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+nav ul {
+    padding-inline: 1rem;
+
+    li {
+        padding-inline: 0.8rem;
+    }
+}
+
+main > div {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    margin-block: 10px;
+    margin-inline: 5px;
+    padding-top: 4rem;
+}
+main > div > div {
+    width: 24%;
+}
+
+main > div > div img {
+    width: 100%;
+}
+
+header p {
+    margin-block: 1rem;
+}

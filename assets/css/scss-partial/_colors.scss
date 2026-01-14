@@ -1,0 +1,45 @@
+$text-color: #f4f4f4;
+$button-one: #0e6cff;
+$button-two: #ff8700;
+$button-three: #4caf50;
+$bg-hero: #640fc5;
+$title-color: #28064f;
+$header-border: #b278f5;
+
+body {
+    color: $text-color;
+}
+
+header {
+    background-color: $bg-hero;
+    h1,
+    nav > div {
+        color: $title-color;
+    }
+
+    div > div:nth-child(2) {
+        border-color: $header-border;
+    }
+
+    button {
+        color: $text-color;
+        border-radius: 5px;
+        border: 0;
+    }
+}
+
+header button:nth-of-type(1) {
+    background-color: $button-one;
+}
+
+header button:nth-of-type(2) {
+    background-color: $button-two;
+}
+header button:nth-of-type(3) {
+    background-color: $button-three;
+}
+
+header p,
+header ul {
+    opacity: 80%;
+}
